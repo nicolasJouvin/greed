@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">greed</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.5.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.5.1</span>
       </span>
     </div>
 
@@ -90,6 +90,9 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">News</a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Articles
@@ -99,6 +102,9 @@
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="../articles/graph-clustering-with-sbm.html">Graph clustering</a>
+    </li>
+    <li>
+      <a href="../articles/GMM.html">Gaussian Mixture Model Clustering</a>
     </li>
   </ul>
 </li>
@@ -158,6 +164,12 @@
 <li><p>din: numeric vector of size K which store the sums of in-degrees for each clusters</p></li>
 <li><p>dout: numeric vector of size K which store the sums of out-degrees for each clusters</p></li>
 <li><p>x_counts: matrix of size K*K with the number of links between each pair of clusters</p></li>
+</ul></p></dd>
+
+<dt><code>obs_stats_cst</code></dt><dd><p>a list with the following elements:
+<ul>
+<li><p>din_node: node in-degree, a vector of size N</p></li>
+<li><p>dout_node: node in-degree vector of size N</p></li>
 </ul></p></dd>
 
 <dt><code>move_mat</code></dt><dd><p>binary matrix which store move constraints</p></dd>
